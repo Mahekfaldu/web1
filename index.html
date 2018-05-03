@@ -1,52 +1,661 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html lang="en" >
-
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <head>
-  <meta charset="UTF-8">
-  <title>Modern Restaurant</title>
-  <link href='css.css' rel='stylesheet' type='text/css'>
+
+<b:skin version='1.3.0'><![CDATA[/    ]]></b:skin>
 
   
-  <link rel='stylesheet prefetch' href='bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='owl.theme.min.css'>
-<link rel='stylesheet prefetch' href='owl.carousel.min.css'>
+   <title>7 th Heaven</title>
+<link href='https://use.fontawesome.com/releases/v5.0.10/css/all.css' rel='stylesheet'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+<link href='https://mahekfaldu.github.io/web1/css.css' rel='stylesheet' type='text/css'/>
+<link href='https://mahekfaldu.github.io/web1/bootstrap.min.css' rel='stylesheet prefetch'/>
 
-      <link rel="stylesheet" href="css/style.css">
+<link href='https://mahekfaldu.github.io/web1/owl.theme.min.css' rel='stylesheet prefetch'/>
+<link href='https://mahekfaldu.github.io/web1/owl.carousel.min.css' rel='stylesheet prefetch'/>
 
+
+
+
+
+<style>
+  html,body {
+  font-family: &#39;Lato&#39;, Arial, sans-serif;
+     height: 100%;
+    
+}
+
+p{
+  font-weight:500;
+  font-size:16px;
+}
+h4{
+  font-weight:500;
+  line-height:1.3em;
+}
+h2{
+ 
+}
+
+nav.navbar.navbar-default {
+  min-height: 60px;
+  padding-top: 5px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 4px #969696;
+}
+
+.navbar-default .navbar-brand {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: grey;
+}
+
+.navbar-default .navbar-text {
+  color: black;
+}
+
+.navbar-default .navbar-nav&gt;li&gt;a {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-nav&gt;li&gt;a:hover,
+.navbar-default .navbar-nav&gt;li&gt;a:focus {
+  color: white;
+  background-color: grey;
+}
+
+.navbar-default .navbar-nav&gt;.active&gt;a,
+.navbar-default .navbar-nav&gt;.active&gt;a:hover,
+.navbar-default .navbar-nav&gt;.active&gt;a:focus {
+  color: black;
+}
+
+.navbar-default .navbar-nav&gt;.open&gt;a,
+.navbar-default .navbar-nav&gt;.open&gt;a:hover,
+.navbar-default .navbar-nav&gt;.open&gt;a:focus {
+  color: black;
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default {
+  border-color: black;
+}
+
+.navbar-default .navbar-link {
+  color: black;
+}
+
+.navbar-default .navbar-link:hover {
+  color: black;
+}
+
+@media(max-width:767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a {
+    color: black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a:focus {
+    color: black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a,
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a:focus {
+    color: black;
+    background-color: #fff;
+  }
+}
+ .carousel,
+.item,
+.active {
+ height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-caption{
+top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+.carousel-caption h2{
+font-size:50px;
+}
+.carousel-caption h3{
+font-size:30px;
+}
+
+.carousel-caption .btn{
+color:#000000;
+font-size:18px;
+background:#ffffff;
+padding:10px 15px 10px 15px;
+margin-top:15px;
+}
+.carousel .btn:hover {
+  background-color: #000000;
+  color:#ffffff;
+  border:2px solid #ffffff;
+ 
+  transition: background .5s;
+}
+
+ 
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  outline: 0;
+ }
+.carousel .carousel-control {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control {
+  visibility: visible;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media(max-width: 768px) {
+.carousel-caption h2{
+font-size:32px;
+}
+.carousel-caption h3{
+font-size:22px;
+}
+}
+/*CSS FOR REGULAR HEADER*/
+  /*
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://mahekfaldu.github.io/web1/img.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .header-standout {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: &#39;Playball&#39;, cursive;
+  }
+  .header-short {
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  .header-box {
+    margin: 260px 0px 200px 0px;
+  }
+  .reserve .btn {
+    color: #000000;
+    background: #ffffff;
+    padding: 18px 30px 18px 30px;
+  }
+.reserve .btn:hover {
+  background-color: #000000;;
+  color:#ffffff;
+ 
+  transition: background .5s;
+}
+@media(max-width: 768px) {
+ .header-box {
+    margin: 130px 0px 100px 0px;
+  } 
+   .header-standout {
+     font-size:45px;
+     
+  }
   
+}
+  */
+  /*OUR CHEF*/
+  .to-close {
+    margin-bottom: 30px;
+  }
+  .our-chef {
+    padding: 70px 0px 70px 0px;
+  }
+  .chef {
+    height: 333px;
+    width: 600px;
+    border:3px solid #000000;
+  }
+  .chef-btn .btn {
+    background: #000000;
+    color: #ffffff;
+    font-size: 25px;
+  }
+.chef-btn .btn:hover {
+  background-color: #ffffff;
+  color:#000000;
+  border:2px solid #000000;
+ 
+  transition: background .5s;
+}
+  .too-close {
+    margin-bottom: 30px;
+  }
+  
+  /*0UR CHEF CLOSE*/
+  /*MENU*/
+  #our-menu h2 {
+    text-align: center;
+    display: block;
+  }
+  #our-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://mahekfaldu.github.io/web1/img.jpg) no-repeat;
+    padding: 70px 0px 70px 0px;
+    color: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #our-menu h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .menu-tabs {
+    border-bottom: 2px solid #DDD;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: none;
+    text-align: center;
+  }
+  .menu-tabs &gt; li.active &gt; a,
+  .menu-tabs &gt; li.active &gt; a:focus,
+  .menu-tabs &gt; li.active &gt; a:hover {
+    border-width: 0;
+  }
+  .menu-tabs &gt; li &gt; a {
+    border: none;
+    color: #666;
+  }
+  .menu-tabs &gt; li.active &gt; a,
+  .menu-tabs &gt; li &gt; a:hover {
+    border: none;
+    color: #fff !important;
+    background: transparent;
+  }
+  .menu-tabs &gt; li &gt; a::after {
+    content: &quot;&quot;;
+    background: #fff;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+  }
+  .menu-tabs &gt; li.active &gt; a::after,
+  .menu-tabs &gt; li:hover &gt; a::after {
+    transform: scale(1);
+  }
+  .menu-tabs li,
+  .menu-tabs li a {
+    display: inline-block;
+  }
+  .menu-tabs li {
+    float: none;
+  }
+  .menu-tabs&gt;li.active&gt;a,
+  .menu-tabs&gt;li.active&gt;a:hover,
+  .menu-tabs&gt;li.active&gt;a:focus {
+    background: none;
+    color: #fff;
+  }
+  .menu-tabs li a {
+    color: #D2D2D2;
+    border-radius: 0;
+    display: inline-block;
+    margin: 0 6px;
+  }
+  .menu-group-item {
+    margin-bottom: 20px;
+  }
+  .menu-item-price {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .menu-title {
+    font-family: &#39;Roboto&#39;, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    margin: 5px 0;
+  }
+  .menu-descp {
+    color: #868686;
+  }
+  /*MENU CLOSE*/
+  /*GALLERY*/
+  .my-work {
+    padding: 70px 0px 70px 0px;
+    background: #f2f2f2;
+  }
+  #lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+  }
+  #lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    z-index: 1032;
+  }
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutter&gt;[class^=&quot;col-&quot;]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.thumbnail{
+    margin-bottom: -0px;
+ 
+}
+  /*RECENT CREATIONS*/
+  .newest-creations {
+    padding: 60px 0px 0px 0px;
+    text-align: center;
+  }
+  .creation-h2 {
+    margin-bottom: 40px;
+  }
+  .newest .btn {
+    color: white;
+    background: #000000;
+    padding: 10px 15px 10px 15px;
+    margin-bottom:20px;
+  }
+  .create {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
+  /*OUR-TEAM*/
+  .our-team {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://mahekfaldu.github.io/web1/img.jpg);
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #ffffff;
+    padding: 60px 0px 60px 0px;
+  }
+.co-worker{
+  border:3px solid #ffffff;
+}
+  .team-member {
+    margin-bottom: 60px;
+  }
+  .fa-twitter,
+  .fa-facebook,
+  .fa-linkedin {
+    color: #000000;
+  }
+
+  .fa-circle {
+    color: #ffffff;
+  }
+
+
+  /*CONTACT US*/
+  .contact-us {
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://mahekfaldu.github.io/web1/img.jpg);
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+   padding-top:100px;
+    padding-bottom:100px;
+    color:#ffffff;
+  }
+  .contact-us h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+.well{
+  background:#000000;
+  opacity:0.8;
+    border:1px solid black;
+}
+  .contact-us h4 {
+    margin-bottom: 20px;
+  }
+  .contact-btn .btn {
+    color: #000000;
+    background: #ffffff;
+    font-size: 19px;
+    font-weight:600;
+    padding: 15px 20px 15px 20px;
+    margin-top:10px;
+    margin-bottom:15px;
+  }
+.contact-btn .btn:hover {
+  background-color: #000000;
+  color:#ffffff;
+  border: 2px solid #ffffff;
+ 
+  transition: background .5s;
+}
+  .info-box {
+    padding-left: 95px;
+    position: relative;
+    margin-bottom: 40px
+  }
+.info-box a{
+  color:#ffffff;
+}
+  .info-section {
+    background: #121f1f;
+    color: #ffffff;
+    padding: 30px 0px 20px 0px;
+  }
+  .info-box:hover div {
+    color: #ff33ff
+  }
+  .info-box div {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: 1px solid;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    left: 0;
+    line-height: 64px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff!important;
+    border-color: #ffffff!important;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s
+  }
+  .info-box:hover div {
+    background-color: #1a75ff;
+  }
+  /*FOOTER SECTION*/
+  .subscribe-form .form-control {
+    height: 46px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .subscribe .btn {
+    color: #fff;
+    background: grey;
+  }
+  .subscribe .btn:hover {
+    background-color: black;
+    transition: background .5s;
+  }
+  .footer-section {
+    background: #000000;
+    color: #ffffff;
+    padding: 70px 0px;
+    70px 0;
+  }
+.con-us a{
+  color:#ffffff;
+  
+}
+  /*our vibe*/
+  .our-vibe {
+    padding: 70px 0px 70px 0px;
+    color: #ffffff;
+    background: #000000;
+  }
+  vibe-h2 {
+    margin-bottom: 40px;
+  }
+  .youtube-box {
+    width: 55%;
+    height: 55%;
+    margin: 0 auto;
+  }
+ #owl-demo .item{
+   background:#ffffff;
+  color:#000000;
+    padding: 20px 10px 20px 10px;
+    margin: 5px;
+   text-align: center;
+  
+}
+  .our-customers {
+    text-align: center;
+    padding: 10px 0 10px 0px;
+  }
+.customer-space{
+  margin-bottom:30px;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #ffffff;
+}
+.cust-h3{
+  font-weight:600;
+}
+.cust-p{
+  
+  font-size:18px;
+}
+
+  .cust {
+    margin: 0 auto;
+    border:0px solid #ffffff;
+    height:50%;
+    width:240px;
+  }
+#store{
+  height:60px;
+width: 180px;
+-moz-box-shadow: 0 0 6px #ffffff;
+-webkit-box-shadow: 0 0 6px #ffffff;
+box-shadow: 0 0 6px #ffffff;
+
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+</style>
+
+ 
 </head>
+
 
 <body>
 
-   
-        <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+
+     <!-- Navigation -->
+    <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+        <div class='container'>
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+                    <span class='sr-only'>Toggle navigation</span>
+                    <span class='icon-bar'/>
+                    <span class='icon-bar'/>
+                    <span class='icon-bar'/>
                 </button>
-                <a class="navbar-brand" href="#">TONY'S</a>
+                <a class='navbar-brand' href='#'>7th Heaven</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+                <ul class='nav navbar-nav navbar-right'>
                     <li>
-                        <a href="#">About</a>
+                        <a href='#'>About</a>
                     </li>
                     <li>
-                        <a href="#">Menu</a>
+                        <a href='#our-menu'>Services</a>
                     </li>
                     <li>
-                        <a href="#">Gallery</a>
+                        <a href='#'>Gallery</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href='#contact'>Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,51 +667,64 @@
 
 
           <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <header class='carousel slide' id='myCarousel'>
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+        <ol class='carousel-indicators'>
+            <li class='active' data-slide-to='0' data-target='#myCarousel'/>
+            <li data-slide-to='1' data-target='#myCarousel'/>
+            <li data-slide-to='2' data-target='#myCarousel'/>
         </ol>
 
         <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
+        <div class='carousel-inner'>
+            <div class='item active'>
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img.jpg);"></div>
-                <div class="carousel-caption">
-                  <h2><strong>OUR FOOD IS DELICIOUS</strong></h2>
-					<h3>Come and eat with us!</h3>
-					<a class="btn">Learn More</a>
+                <div class='fill' style='background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://mahekfaldu.github.io/web1/slidec.png);'/>
+                <div class='carousel-caption'>
+                  <h2><strong>We Are Best In Interior Designing</strong></h2>
+					<h3>Give Us A Chance!</h3>
+					<a class='btn'>Learn More</a>
                 </div>
             </div>
-            <div class="item">
+            <div class='item'>
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img.jpg);"></div>
-                <div class="carousel-caption">
-                  <h2><strong>OUR FOOD IS DELICIOUS</strong></h2>
-					<h3>Come and eat with us!</h3>
-					<a class="btn">Learn More</a>
+                <div class='fill' style='background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://mahekfaldu.github.io/web1/slidec2.jpg);'/>
+                <div class='carousel-caption'>
+                  <h2><strong>We Are Laminate Distributor</strong></h2>
+					<h3>Get A 20-30% Addition Benefits !</h3>
+                  <a class='btn' href='#contact'> Know how </a>
                 </div>
             </div>
-            <div class="item">
+
+
+<!-- <div class='item'>
+              
+                <div class='fill' style='background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://drive.google.com/uc?export=download&amp;id=1WVdRme5rr00naSGue1P8AODhxo5A8FjD);'/>
+                <div class='carousel-caption'>
+                  <h2><strong>We Are Laminate Distributor</strong></h2>
+					<h3>Get A 20-30% Addition Benefits !</h3>
+                  <a class='btn' href='#contact'> Know how </a>
+                </div>
+            </div> -->
+
+
+            <div class='item'>
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img.jpg);"></div>
-                <div class="carousel-caption">
-                  <h2><strong>OUR FOOD IS DELICIOUS</strong></h2>
-					<h3>Come and eat with us!</h3>
-					<a class="btn">Learn More</a>
+                <div class='fill' style='background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://mahekfaldu.github.io/web1/img.jpg);'/>
+                <div class='carousel-caption'>
+                  <h2><strong>Anywhere In South, Central, West, india</strong></h2>
+					<h3>Just ask!</h3>
+					<a class='btn'>More</a>
                 </div>
             </div>
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
+        <a class='left carousel-control' data-slide='prev' href='#myCarousel'>
+            <span class='glyphicon glyphicon-chevron-left'/>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
+        <a class='right carousel-control' data-slide='next' href='#myCarousel'>
+            <span class='glyphicon glyphicon-chevron-right'/>
         </a>
 
     </header>
@@ -113,187 +735,165 @@
 
 
 
-<!--<div class="header">
-    <div class="container">
-     
-      
-      <div class="header-box">
-      
-        <h1 class="header-standout">TONY'S</h1>
-        <h3 class="header-short">Duis vel massa fringilla, suscipit risus sit amet, molestie eros.</h3>
-      
-        <div class="reserve">
-        <a class="btn" href="#">MAKE A RESERVATION</a>
-        </div>
-     
-      </div>
-    
-      
-      
-      
-    </div>
-</div>
-<!--fra-->
 
 
-<div class="our-chef">
-    <div class="container">
-  <div class="row">
+<div class='our-chef'>
+    <div class='container'>
+  <div class='row'>
    
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="text-center"><strong>OUR CHEF</strong></h2>
-      <h4 class="to-close text-center"><strong>Duis vel massa fringilla, suscipit risus sit amet, molestie eros. Proin at cursus mi. Donec euismod lectus vel lacus luctus sollicitudin. Sed sed purus sapien.</strong></h4>
+    <div class='col-md-8 col-md-offset-2'>
+      <h2 class='text-center'><strong>About Us</strong></h2>
+      <h4 class='to-close text-center'><strong>Basically we are Distributors Of Decorative Having Large Network In West, South &amp; Central Part Of India.</strong></h4>
     </div>
 				
-    <div class="col-sm-12 col-md-6">
-					<img src="img.jpg" class="chef img-responsive" alt="">
+    <div class='col-sm-12 col-md-6'>
+      <img alt='' class='responsive' src='https://mahekfaldu.github.io/web1/about.jpg'/>
 				</div>
 			
-    <div class="col-sm-12 col-md-6">
-					<h3 class="too-close">Mauris quis eros tortor</h3>
-					<p class="chef-space">Duis vel massa fringilla, suscipit risus sit amet, molestie eros. Proin at cursus mi. Donec euismod lectus vel lacus luctus sollicitudin. Sed sed purus sapien. <strong>Duis pulvinar magna nunc, eget lobortis eros auctor id.</strong> Praesent hendrerit enim eu commodo interdum.</p>
-					<p class="chef-space"><strong>Mauris quis eros tortor.</strong> Ut quis justo tellus. Duis vel massa fringilla, suscipit risus sit amet, molestie eros. Proin at cursus mi. </p>
-					<p>&nbsp;</p>
+    <div class='col-sm-12 col-md-6'>
+					<h3 class='too-close'>Must Read First</h3>
+      <p class='chef-space'><strong>7th Heaven</strong> is Online Services Provider Related To Home Decor, Interior Designing, Material Supply (<strong>Decorative Laminate</strong>), Carpentry, Turnkey Projects,</p> 
+<p class='chef-space'>We Are currently in maharashtra, gujarat, rajasthan, madhya pradesh, karnataka, andhra pradesh, telangana, also in other state as per requirement, ... </p>
+				
       
-      <div class="chef-btn">
-        <p><a class="btn btn-lg btn-block">More</a></p>
+      <div class='chef-btn'>
+        <p><a class='btn btn-lg btn-block' href='https://www.facebook.com/1641888655896059'>Read More</a></p>
       </div>
 				
     </div>
 			</div>
 	  	</div>
 </div>
-
     	
 <!-- Our Menu section starts -->
-        <section id="our-menu">
-            <div class="container">
-              <h2><strong>Our Menu</strong></h2>
-                <div class="menu-table">
+        <section id='our-menu'>
+            <div class='container'>
+              <h2><strong>Our Services</strong></h2>
+                <div class='menu-table'>
                     <!-- Menu tabs -->
-                    <ul class="nav nav-tabs  menu-tabs" role="tablist">
-                        <li class="active">
-                            <a href="#soups-salads-appetizers" aria-controls="soups-salads-appetizers" role="tab" data-toggle="tab" class="icon icon-home"><span>Breakfast</span></a>
+                    <ul class='nav nav-tabs  menu-tabs' role='tablist'>
+                        <li class='active'>
+                            <a aria-controls='soups-salads-appetizers' class='icon icon-home' data-toggle='tab' href='#soups-salads-appetizers' role='tab'><span>DECORATIVE LAMINATES</span></a>
                         </li>
                         <li>
-                            <a href="#organic-pastas" aria-controls="prganic-pastas" role="tab" data-toggle="tab">Lunch</a>
+                            <a aria-controls='prganic-pastas' data-toggle='tab' href='#organic-pastas' role='tab'>Lunch</a>
                         </li>
                         <li>
-                            <a href="#pizza" aria-controls="pizza" role="tab" data-toggle="tab">Dinner</a>
+                            <a aria-controls='pizza' data-toggle='tab' href='#pizza' role='tab'>Dinner</a>
                         </li>
                         <li>
-                            <a href="#entrees" aria-controls="entrees" role="tab" data-toggle="tab">Desserts</a>
+                            <a aria-controls='entrees' data-toggle='tab' href='#entrees' role='tab'>Desserts</a>
                         </li>
                         <li>
-                            <a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Drinks</a>
+                            <a aria-controls='desserts' data-toggle='tab' href='#desserts' role='tab'>Drinks</a>
                         </li>
                     </ul>
 
                     <!-- Menu Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active fade in" id="soups-salads-appetizers">
-                            <div class="row">
-                                <div class="menu-group">
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                    <div class='tab-content'>
+                        <div class='tab-pane active fade in' id='soups-salads-appetizers'>
+                            <div class='row'>
+                                <div class='menu-group'>
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                          <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Crispy yummy</span>
-                                            <span class="menu-descp">mozzarella, Grana Padano, herb aioli, marinara</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>HOM MICA (1 mm)</span>
+                                            <span class='menu-descp'>hom mica is Full Of interior Colour Selections, and Quality Product</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 34
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Minestrone Soup</span>
-                                            <span class="menu-descp">cranberry beans, vegetables, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Minestrone Soup</span>
+                                            <span class='menu-descp'>cranberry beans, vegetables, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 45
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Lentil Soup</span>
-                                            <span class="menu-descp">parmesan chicken broth, potato, bacon, Grana Padano, parsley</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Lentil Soup</span>
+                                            <span class='menu-descp'>parmesan chicken broth, potato, bacon, Grana Padano, parsley</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 54
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Mixed Greens</span>
-                                            <span class="menu-descp">red wine vinaigrette, pears, walnuts, goat cheese</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Mixed Greens</span>
+                                            <span class='menu-descp'>red wine vinaigrette, pears, walnuts, goat cheese</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 23
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Chopped Salad</span>
-                                            <span class="menu-descp">chickpea, green olive, pistachio, pepperoni, oregano, red wine vinaigrette, pecorino</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Chopped Salad</span>
+                                            <span class='menu-descp'>chickpea, green olive, pistachio, pepperoni, oregano, red wine vinaigrette, pecorino</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 46
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Orange Salad</span>
-                                            <span class="menu-descp">green olives, red onions, tarragon, extra virgin olive oil</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Orange Salad</span>
+                                            <span class='menu-descp'>green olives, red onions, tarragon, extra virgin olive oil</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 64
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="ioc.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
-                                            <span class="menu-title">Shaved Kale</span>
-                                            <span class="menu-descp">creamy anchovy dressing, pecorino, bread crumbs</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-9'>
+                                            <span class='menu-title'>Shaved Kale</span>
+                                            <span class='menu-descp'>creamy anchovy dressing, pecorino, bread crumbs</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 75
                                             </span>
                                         </div>
@@ -301,109 +901,109 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade " id="organic-pastas">
-                            <div class="row">
-                                <div class="menu-group">
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                        <div class='tab-pane fade ' id='organic-pastas'>
+                            <div class='row'>
+                                <div class='menu-group'>
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Spaghetti Aglio e Olio</span>
-                                            <span class="menu-descp">olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Spaghetti Aglio e Olio</span>
+                                            <span class='menu-descp'>olive oil, garlic, chili, Grana Padano (add anchovy 2.00)</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 54
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Chitarra al Pomodoro</span>
-                                            <span class="menu-descp">tomatoes, garlic, basil, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Chitarra al Pomodoro</span>
+                                            <span class='menu-descp'>tomatoes, garlic, basil, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 87
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Pappardelle</span>
-                                            <span class="menu-descp">smoked pork, mascarpone, apples</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Pappardelle</span>
+                                            <span class='menu-descp'>smoked pork, mascarpone, apples</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 45
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Pistachio Ravioli</span>
-                                            <span class="menu-descp">pistachio, mint, lemon brown butter, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Pistachio Ravioli</span>
+                                            <span class='menu-descp'>pistachio, mint, lemon brown butter, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 43
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="images/item5.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Garganelli</span>
-                                            <span class="menu-descp">braised beef, olives, gremolata, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Garganelli</span>
+                                            <span class='menu-descp'>braised beef, olives, gremolata, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 43
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="images/item1.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Italian Ramen</span>
-                                            <span class="menu-descp">spaghettini, soft cooked egg, chicken, basil, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Italian Ramen</span>
+                                            <span class='menu-descp'>spaghettini, soft cooked egg, chicken, basil, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 87
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Lasagna Bianca</span>
-                                            <span class="menu-descp">béchamel, butternut squash, onion, fontina, brown butter, sage</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Lasagna Bianca</span>
+                                            <span class='menu-descp'>béchamel, butternut squash, onion, fontina, brown butter, sage</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 78
                                             </span>
                                         </div>
@@ -411,109 +1011,109 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade " id="pizza">
-                            <div class="row">
-                                <div class="menu-group">
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                        <div class='tab-pane fade ' id='pizza'>
+                            <div class='row'>
+                                <div class='menu-group'>
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Margherita</span>
-                                            <span class="menu-descp">tomato, mozzarella, basil</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Margherita</span>
+                                            <span class='menu-descp'>tomato, mozzarella, basil</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 38
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Pastaria Marinara</span>
-                                            <span class="menu-descp">tomato, onion, garlic, oregano, basil, pecorino (very minimal cheese)</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Pastaria Marinara</span>
+                                            <span class='menu-descp'>tomato, onion, garlic, oregano, basil, pecorino (very minimal cheese)</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 48
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Pappardelle</span>
-                                            <span class="menu-descp">smoked pork, mascarpone, apples</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Pappardelle</span>
+                                            <span class='menu-descp'>smoked pork, mascarpone, apples</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 73
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Four Cheese</span>
-                                            <span class="menu-descp">mozzarella, fontina, gorgonzola dolce, Grana Padano (no tomato)</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Four Cheese</span>
+                                            <span class='menu-descp'>mozzarella, fontina, gorgonzola dolce, Grana Padano (no tomato)</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 48
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Fennel Salami</span>
-                                            <span class="menu-descp">tomato, mozzarella</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Fennel Salami</span>
+                                            <span class='menu-descp'>tomato, mozzarella</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 43
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">The Holmes</span>
-                                            <span class="menu-descp">tomato, mozzarella, mushroom, prosciutto, oregano, Grana Padano</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>The Holmes</span>
+                                            <span class='menu-descp'>tomato, mozzarella, mushroom, prosciutto, oregano, Grana Padano</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 75
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Sweet Potato</span>
-                                            <span class="menu-descp">béchamel, fontina, red onion, lemon zest, herbs</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Sweet Potato</span>
+                                            <span class='menu-descp'>béchamel, fontina, red onion, lemon zest, herbs</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 38
                                             </span>
                                         </div>
@@ -521,49 +1121,49 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade " id="entrees">
-                            <div class="row">
-                                <div class="menu-group">
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                        <div class='tab-pane fade ' id='entrees'>
+                            <div class='row'>
+                                <div class='menu-group'>
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Wood Oven Roasted Chicken</span>
-                                            <span class="menu-descp">roasted cauliflower, potato, lemon,caper, parsley</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Wood Oven Roasted Chicken</span>
+                                            <span class='menu-descp'>roasted cauliflower, potato, lemon,caper, parsley</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 70
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Red Wine Braised Beef</span>
-                                            <span class="menu-descp">creamy corn polenta, roasted baby carrots, parsley</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Red Wine Braised Beef</span>
+                                            <span class='menu-descp'>creamy corn polenta, roasted baby carrots, parsley</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 30
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Wood Oven Roasted Salmon</span>
-                                            <span class="menu-descp">fennel confit, farro, zucchini, calabrian chili, preserved lemon</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Wood Oven Roasted Salmon</span>
+                                            <span class='menu-descp'>fennel confit, farro, zucchini, calabrian chili, preserved lemon</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 49
                                             </span>
                                         </div>
@@ -572,64 +1172,64 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="desserts">
-                            <div class="row">
-                                <div class="menu-group">
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                        <div class='tab-pane' id='desserts'>
+                            <div class='row'>
+                                <div class='menu-group'>
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Mama Rodolico’s Tiramisu</span>
-                                            <span class="menu-descp">roasted cauliflower, potato, lemon,caper, parsley</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Mama Rodolico&#8217;s Tiramisu</span>
+                                            <span class='menu-descp'>roasted cauliflower, potato, lemon,caper, parsley</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 53
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Dark Chocolate Tart</span>
-                                            <span class="menu-descp">whipped cream and candied hazelnuts</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Dark Chocolate Tart</span>
+                                            <span class='menu-descp'>whipped cream and candied hazelnuts</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 37
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Yoghurt Panna Cotta</span>
-                                            <span class="menu-descp">cherry compote</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Yoghurt Panna Cotta</span>
+                                            <span class='menu-descp'>cherry compote</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 73
                                             </span>
                                         </div>
                                     </div>
 
-                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
-                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
-                                            <img src="img.jpg" alt="" class="img-circle">
+                                    <div class='menu-group-item clearfix col-lg-6 col-md-6 col-sm-12'>
+                                        <div class='col-md-3 col-lg-3 col-sm-3 hidden-xs'>
+                                            <img alt='' class='img-circle' src='https://mahekfaldu.github.io/web1/img.jpg'/>
                                         </div>
-                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
-                                            <span class="menu-title">Cannoli</span>
-                                            <span class="menu-descp">pastry cream with strawberry balsamic and salted pistachios</span>
+                                        <div class='col-md-7 col-lg-7 col-sm-7 col-xs-7'>
+                                            <span class='menu-title'>Cannoli</span>
+                                            <span class='menu-descp'>pastry cream with strawberry balsamic and salted pistachios</span>
                                         </div>
-                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
-                                            <span class="menu-item-price">
+                                        <div class='col-md-2 col-lg-2 col-sm-2 col-xs-3'>
+                                            <span class='menu-item-price'>
                                                 $ 48
                                             </span>
                                         </div>
@@ -647,80 +1247,80 @@
 
 
 
-           <div class="my-work">
-<div class="container">
-  <div class="row">
+           <div class='my-work'>
+<div class='container'>
+  <div class='row'>
     
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="text-center"><strong>Food Gallery<strong></h2>
-      <h4 class="text-center"><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000</strong></h4>
+    <div class='col-md-8 col-md-offset-2'>
+      <h2 class='text-center'><strong>Interior Designs Gallery</strong></h2>
+      <h4 class='text-center'><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000</strong></h4>
     </div>
     
   </div>
  </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row no-gutter">
+<div class='container-fluid'>
+  <div class='row no-gutter'>
    
-    <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+    <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-    <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+    <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img class="new" src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' class='new' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
-     <div class="col-xs-6 col-sm-3">
-        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-            <img src="img.jpg" alt="...">
+     <div class='col-xs-6 col-sm-3'>
+        <a class='thumbnail' data-target='#lightbox' data-toggle='modal' href='#'> 
+            <img alt='...' src='https://mahekfaldu.github.io/web1/img.jpg'/>
         </a>
     </div>
     
@@ -730,50 +1330,41 @@
       
 
 
-  <div class="newest-creations">
-    <div class="container">
-      <div class="row">
+  <div class='newest-creations'>
+    <div class='container'>
+      <div class='row'>
         
-        <div class="col-md-8 col-md-offset-2">
-          <h2 class="creation-h2"><strong>OUR NEWEST CREATIONS</strong></h2>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='creation-h2'><strong>OUR NEWEST CREATIONS</strong></h2>
         </div>
        
-        <div class="col-md-3">
-          <img class="create img-responsive" src="img.jpg">
-          <h4><strong>Contrary to popular belief</strong></h4>
-          <p><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</strong></p>
-          <div class="newest">
-            <a class="btn">View Creation</a>
-          </div>
+        <div class='col-md-3'>
+          
+<iframe allow='encrypted-media' allowTransparency='true' class='create img-responsive' frameborder='0' height='498' scrolling='no' src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finteriors.IND%2Fposts%2F1655840847834173&amp;width=500&amp;show_text=false&amp;appId=373694479706033&amp;height=498' style='border:none;overflow:hidden' width='500'/>
+          <h4><strong>360 Kitchen</strong></h4>
+          <p><strong>experience kitchen interior in 360</strong></p>
+          
         </div>
         
-         <div class="col-md-3">
-             <img class="create img-responsive" src="img.jpg">
-          <h4><strong>Contrary to popular belief</strong></h4>
-          <p><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</strong></p>
-          <div class="newest">
-            <a class="btn">View Creation</a>
-          </div>
-        </div>
+         <div class='col-md-3'>
+          
+<iframe allow='encrypted-media' allowTransparency='true' class='create img-responsive' frameborder='0' height='498' scrolling='no' src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finteriors.IND%2Fposts%2F1650654881686103&amp;width=500&amp;show_text=false&amp;appId=373694479706033&amp;height=498' style='border:none;overflow:hidden' width='500'/>
+          <h4><strong>Dining table 360</strong></h4>
+          <p><strong>#dining table 360 view of home Interior</strong></p>
+         </div>
         
         
-         <div class="col-md-3">
-             <img class="create img-responsive" src="img.jpg">
-         <h4><strong>Contrary to popular belief</strong></h4>
-          <p><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</strong></p>
-          <div class="newest">
-            <a class="btn">View Creation</a>
-          </div>
-        </div>
+         <div class='col-md-3'>
+            <iframe allow='encrypted-media' allowTransparency='true' class='create img-responsive' frameborder='0' height='498' scrolling='no' src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finteriors.IND%2Fposts%2F1647104885374436&amp;width=500&amp;show_text=false&amp;appId=373694479706033&amp;height=498' style='border:none;overflow:hidden' width='500'/>
+         <h4><strong>Modern Dining table</strong></h4>
+          <p><strong>Have You Seen Such Beautiful 360 interior Before ?</strong></p>
+         </div>
         
-         <div class="col-md-3">
-            <img class="create img-responsive" src="img.jpg">
-         <h4><strong>Contrary to popular belief</strong></h4>
-          <p><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</strong></p>
-          <div class="newest">
-            <a class="btn">View Creation</a>
+         <div class='col-md-3'>
+            <iframe allow='encrypted-media' allowTransparency='true' class='create img-responsive' frameborder='0' height='498' scrolling='no' src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finteriors.IND%2Fposts%2F1641965699221688&amp;width=500&amp;show_text=false&amp;appId=373694479706033&amp;height=498' style='border:none;overflow:hidden' width='500'/>
+         <h4><strong>Classic Dining table</strong></h4>
+          <p><strong>Another Great 360 view</strong></p>
           </div>
-        </div>
       
       
       </div>
@@ -782,113 +1373,113 @@
 
 
 
-   <div class="our-team">
-     <div class="container">
-       <div class="row">
+   <div class='our-team'>
+     <div class='container'>
+       <div class='row'>
          
-         <div class="col-md-8 col-md-offset-2">
-           <h2 class="team-member"><strong>OUR AWESOME TEAM</strong></h2>
+         <div class='col-md-8 col-md-offset-2'>
+           <h2 class='team-member'><strong>OUR AWESOME TEAM</strong></h2>
          </div>
          
-         <div class="col-md-3">
-           <img src="img.jpg" class="co-worker img-circle">
+         <div class='col-md-3'>
+           <img class='co-worker img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
           <h3>John Doe</h3>
-          <p class="skill"<em>Foreman</em></p>
-            <ul class="list-inline social-buttons">
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-stack-2x"></i>
-             <i class="fa fa-twitter fa-stack-1x"></i>
+          <p class='skill'><em>Foreman</em></p>
+            <ul class='list-inline social-buttons'>
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-stack-2x'/>
+               <i class='fa fa-twitter fa-stack-1x'/></span>
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-facebook fa-stack-1x"></i>   
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+               <i class='fa fa-facebook fa-stack-1x'/> </span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-linkedin fa-stack-1x"></i>  
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-linkedin fa-stack-1x'/> </span>   
              </a>
              </li>
              </ul>
          </div>
          
-         <div class="col-md-3">
-           <img src="img.jpg" class="co-worker img-circle">
+         <div class='col-md-3'>
+           <img class='co-worker img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
           <h3>John Doe</h3>
-          <p class="skill"<em>Foreman</em></p>
-            <ul class="list-inline social-buttons">
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-stack-2x"></i>
-             <i class="fa fa-twitter fa-stack-1x"></i>
+          <p class='skill'><em>Foreman</em></p>
+            <ul class='list-inline social-buttons'>
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-stack-2x'/>
+             <i class='fa fa-twitter fa-stack-1x'/></span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-facebook fa-stack-1x"></i>   
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-facebook fa-stack-1x'/>   </span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-linkedin fa-stack-1x"></i>  
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-linkedin fa-stack-1x'/>  </span>  
              </a>
              </li>
              </ul>
          </div>
          
-         <div class="col-md-3">
-           <img src="img.jpg" class="co-worker img-circle">
+         <div class='col-md-3'>
+           <img class='co-worker img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
           <h3>John Doe</h3>
-          <p class="skill"<em>Foreman</em></p>
-            <ul class="list-inline social-buttons">
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-stack-2x"></i>
-             <i class="fa fa-twitter fa-stack-1x"></i>
+          <p class='skill'><em>Foreman</em></p>
+            <ul class='list-inline social-buttons'>
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-stack-2x'/>
+             <i class='fa fa-twitter fa-stack-1x'/></span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-facebook fa-stack-1x"></i>   
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-facebook fa-stack-1x'/>   </span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-linkedin fa-stack-1x"></i>  
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-linkedin fa-stack-1x'/>  </span>  
              </a>
              </li>
              </ul>
          </div>
          
-         <div class="col-md-3">
-           <img src="img.jpg" class="co-worker img-circle">
+         <div class='col-md-3'>
+           <img class='co-worker img-circle' src='https://mahekfaldu.github.io/web1/ioc.jpg'/>
           <h3>John Doe</h3>
-          <p class="skill"<em>Foreman</em></p>
-            <ul class="list-inline social-buttons">
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-stack-2x"></i>
-             <i class="fa fa-twitter fa-stack-1x"></i>
+          <p class='skill'><em>Foreman</em></p>
+            <ul class='list-inline social-buttons'>
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-stack-2x'/>
+             <i class='fa fa-twitter fa-stack-1x'/></span>  
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-facebook fa-stack-1x"></i>   
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-facebook fa-stack-1x'/>  </span>   
              </a>
              </li>
-             <li><a href="#">
-             <span class="fa-stack fa-lg">
-             <i class="fa fa-circle fa-2x"></i>
-             <i class="fa fa-linkedin fa-stack-1x"></i>  
+             <li><a href='#'>
+             <span class='fa-stack fa-lg'>
+             <i class='fa fa-circle fa-2x'/>
+             <i class='fa fa-linkedin fa-stack-1x'/>  </span>  
              </a>
              </li>
              </ul>
@@ -899,98 +1490,99 @@
 </div>
 
 
-          <div class="our-customers">
-            <div class="container-fluid">
+          <div class='our-customers'>
+            <div class='container-fluid'>
               
-              <div class="col-md-12">
-                <h2 class="customer-space"><strong>WHAT OUR CUSTOMERS SAY</strong></h2>
+              <div class='col-md-12'>
+                <h2 class='customer-space'><strong>Brands</strong></h2>
               </div>
               
-              <div class="col-md-12">
+              <div class='col-md-12'>
 
-                  <div id="owl-demo" class="owl-carousel owl-theme">
+                  <div class='owl-carousel owl-theme' id='owl-demo'>
  
-                  <div class="item">
+                
+                <div class='item'>
                     
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                    <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</strong>  </p>
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lhommica.jpg'/>
+                        <h3 class='cust-h3'><strong>Hom Mica (1mm)</strong></h3>
+                    <p class='cust-p'><strong>A Brand From Advance Laminate Pvt. Ltd<br/>Gujarat</strong></p>
                     </div>
+                     
+                    
+                    
+                    <div class='item'>
+                  
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lpiano.jpg'/>
+                      <h3 class='cust-h3'><strong>Piano (1mm)</strong></h3>
+                      <p class='cust-p'><strong>A Brand From Advance Laminate Pvt. Ltd<br/>Gujarat</strong></p>
+                      </div>
+                      
+                    
+                      <div class='item'>
                    
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lilite.jpg'/>
+                        <h3 class='cust-h3'><strong>I lite (0.8) </strong></h3>
+                        <p class='cust-p'><strong>Airolam Limited<br/>Gujarat</strong></p>
+                    </div>
+                       
+                      <div class='item'>
+                   
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/llotus.jpg'/>
+                        <h3 class='cust-h3'><strong>Lotus </strong></h3>
+                        <p class='cust-p'><strong>Ace Mica Pvt. Ltd<br/>Gujarat</strong></p>
+                    </div>
+                      
                     
+                       <div class='item'>
                     
-                       <div class="item">
-                    
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                         <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lbell.jpg'/>
+                         <h3 class='cust-h3'><strong>Bell (1mm)</strong></h3>
+                    <p class='cust-p'><strong>Bell Is one Of The Popular Laminate Brand In Gujarat</strong></p>
                          
                     </div>
                     
                     
-                      <div class="item">
                     
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                        <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
+                      <div class='item'>
+                   
+                        <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lperly.jpg'/>
+                        <h3 class='cust-h3'><strong>Perly (0.8)</strong></h3>
+                        <p class='cust-p'><strong>Product From Advance Laminate Pvt. Ltd</strong></p>
+                    </div>
+                      <div class='item'>
+                   
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lmarino.jpg'/>
+                      <h3 class='cust-h3'><strong>Marino (1mm)</strong></h3>
+                    <p class='cust-p'><strong>Popular Brand In India</strong></p>
+                    </div>
+ <div class='item'>
+                   
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/lcentury.jpg'/>
+                      <h3 class='cust-h3'><strong>Centuary (1 mm)</strong></h3>
+                    <p class='cust-p'><strong>Popular Brabd In India</strong></p>
+                    </div> 
+                   
+                    <div class='item'>
+                   
+                    <img alt='' class='cust img-respnonive' src='https://mahekfaldu.github.io/web1/ldelta.jpg'/>
+                      <h3 class='cust-h3'><strong>Delta (1mm)</strong></h3>
+                    <p class='cust-p'><strong>Let&#39;s Decore Home</strong></p>
+                    </div>
+                    
+                    
+                  <div class='item'>
+                   
+                    <img alt='' class='cust img-responsive' src='https://mahekfaldu.github.io/web1/lgreen.jpg'/>
+                    <h3 class='cust-h3'><strong>Green Lam (1mm)</strong></h3>
+                    <p class='cust-p'><strong>True Laminate</strong></p>
                     </div>
                      
+                  <div class='item'>
                     
-                    
-                    <div class="item">
-                  
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                      <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
-                      </div>
-                      
-                    
-                      <div class="item">
-                   
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                        <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                        <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
-                    </div>
-                      
-                    
-                    
-                      <div class="item">
-                   
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                        <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</p>
-                    </div>
-                     
-                    
-                    
-                      <div class="item">
-                   
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                        <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                        <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
-                    </div>
-                      
-                   
-                    <div class="item">
-                   
-                    <img class="cust img-respnonive img-circle" src="img.jpg" alt="">
-                      <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
-                    </div>
-                    
-                    
-                  <div class="item">
-                   
-                    <img class="cust img-responsive img-circle" src="img.jpg" alt="">
-                    <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
-                    </div>
-                     
-                  <div class="item">
-                    
-                    <img class="cust img-responsive img-circle" src="img.jpg" alt="">
-                    <h3 class="cust-h3"><strong>John Doe</strong></h3>
-                    <p class="cust-p"><strong>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical"</strong></p>
+                    <img alt='' class='cust img-responsive' src='https://mahekfaldu.github.io/web1/lroyaltouch.jpg'/>
+                    <h3 class='cust-h3'><strong>Royal Touch (1mm)</strong></h3>
+                    <p class='cust-p'><strong>Available In Wide Range Of Selection</strong></p>
                     </div>
                       
  
@@ -1003,36 +1595,36 @@
                 
                 
                 
-                <div class="our-vibe">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="vibe-h2 text-center"><strong>Our Restaurant Vibe<strong></h2>
+            <!--     <div class='our-vibe'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-12'>
+              <h2 class='vibe-h2 text-center'><strong>Our Vibe</strong></h2>
             </div>
              
-             <div class="col-md-12">
-              <div class="youtube-box">
-              <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t6PzJA_2Vww" ></iframe>
+             <div class='col-md-12'>
+              <div class='youtube-box'>
+              <div class='embed-responsive embed-responsive-4by3'>
+              <iframe class='embed-responsive-item' src='https://www.youtube.com/'/>
               </div>
               </div>
               
             </div>
           </div>
         </div>
-</div>
+</div> -->
 
 
-   <div class="contact-us">
-     <div class="container">
-       <div class="row">
+   <div class='contact-us'>
+     <div class='container'>
+       <div class='row'>
         
-         <div class="col-md-8 col-md-offset-2 well">
-           <h2><strong>BOOK A TABLE NOW</strong></h2>
-           <h4><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</strong>
+         <div class='col-md-8 col-md-offset-2 well'>
+           <h2><strong>BOOK A Meeting NOW</strong></h2>
+           <h4><strong>atfer your one call, everyting is up to us.</strong>
            </h4>
-           <div class="contact-btn">
-             <a class="btn">Make a Reservation</a>
+           <div class='contact-btn'>
+             <a class='btn' href='https://m.me/interiors.IND'>Ask For Requirement</a>
            </div>
           </div>
          
@@ -1042,41 +1634,41 @@
             </div>
          </div>
        </div>
-
-        <div class="info-section">
-          <div class="container">
-            <div class="row">
+  <section id='contact'>
+        <div class='info-section'>
+          <div class='container'>
+            <div class='row'>
               
-              <div class="col-md-4">
+              <div class='col-md-4'>
                
-                <div class="info-box">
-                  <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                  </div>
-                 
-                    <h3><strong>Contact Us<strong></h3>
-                    <p>something@yourmail.com<p>
+                <div class='info-box'>
+                  <div><a href='https://m.me/interiors.IND'>
+                    <i aria-hidden='true' class='fab fa-facebook-messenger'/>
+                    </a> </div>
+               
+                  <h3><strong>Message Now</strong></h3>
+                  <p>Click Messege icon To Send Direct Message To Facebook</p>
             
               </div>
               </div>
               
-              <div class="col-md-4">
-                <div class="info-box">
-                   <div>
-                <i class="fa fa-phone-square" aria-hidden="true"></i>
+              <div class='col-md-4'>
+                <div class='info-box'>
+                   <div><a href='https://api.whatsapp.com/send?phone=918238818387&amp;text=hiii.%0A%28ref%3Afb%20page%29'>
+                     <i aria-hidden='true' class='fa fa-whatsapp'/></a>
                   </div>    
-                  <h3><strong>Call Us</strong></h3>
-                    <p>555-555-5555<p>
+                  <h3><strong>Whatsapp</strong></h3>
+                  <p>click on above link For whatsapp us now</p>
               </div>
               </div>
               
-              <div class="col-md-4">
-                  <div class="info-box">
-                     <div>
-                <i class="fa fa-map-o" aria-hidden="true"></i>
+              <div class='col-md-4'>
+                  <div class='info-box'>
+                     <div><a href='https://www.facebook.com/interiors.IND'>
+                       <i aria-hidden='true' class='fab fa-facebook-square'/></a>
                    </div>      
-                    <h3><strong>Our Location</strong></h3>
-                    <p><a href="https://www.google.com/maps/place/Best+Little+Roadhouse/@44.9298169,-123.0464641,17z/data=!3m1!4b1!4m5!3m4!1s0x54bfff67d22bda45:0xb5138d91cd1486b1!8m2!3d44.9298169!4d-123.0442754" target="_blank">626 yum St Salem, Oregon</a><p>
+                    <h3><strong>Facebook Page</strong></h3>
+                    <p>Visit Our Awesome Facebook Page Once</p>
               </div>
               </div>
               
@@ -1085,56 +1677,43 @@
             </div>
           </div>
        </div>
-
-
-       <div class="footer-section">
-         <div class="container">
-           <div class="row">
+  </section>
+  
+       <div class='footer-section'>
+         <div class='container'>
+           <div class='row'>
              
-             <div class="col-md-3">
-               <h3><strong>About Us</strong></h3>
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
-               <p class="con-us"><a href="#">Read more.......</a></p>
-             </div>
+             <div class='col-md-3'>
+               <h3><strong>Happy To Help</strong></h3>
+               <p>We We Believe In Customers Satisfaction, Also We Believe That Price Of Material And Services Given By Us Is Best In Market,</p><p>If You Are Unsatisfied With Our Product/Service Please Don&#39;t Hesitate To Tell Us</p><p>We Are Always Ready To Solve Any Problem</p>
              
-             <div class="col-md-3">
-                   <div class="subscribe">
-                     <h3><strong>Subscribe</strong></h3>
-							<p>Ut vel ultrices ligula. Curabitur consectetur lobortis velit, eget semper lobortis velit, eget semper</p>
-							<p>Ut vel ultrices ligula. Curabitur consectetur lobortis velit,</p>
-                <form role="form" class="subscribe-form">
-                                
-                 <div class="input-group">
-                 <input type="text" class="form-control" placeholder="Enter email to subscribe">
-                  <span class="input-group-btn">
-                    <button class="btn  btn-theme-dark btn-lg" type="submit">Ok</button>
-                  </span>
-                 </div>
-              </form>         
-						</div>
+             </div> 
              
-
-             </div>
+             <div class='col-md-3'>
+                   <div class='subscribe'>
+                     <h3><strong>Benefits</strong></h3>
+							<p>Lowest Service Charges</p>
+							<p>Material At Factory Rate,</p>
+                     <p>20-30 % Benefits in Laminate </p>
+			</div>
+              </div>
              
-             <div class="col-md-3">
+             <div class='col-md-3'>
               
                <h3><strong>Our hours</strong></h3>
-               <p><span class="text-color"><strong>Monday:</strong> </span>Closed</p>
-               <p><span class="text-color"><strong>Tue-Wed :</strong></span> 9:Am - 10PM</p>
-               <p><span class="text-color"><strong>Thu-Fri :</strong></span> 9:Am - 10PM</p>
-               <p><span class="text-color"><strong>Sat-Sun :</strong></span> 5:PM - 10PM</p>
-              
-
+               <p><span class='text-color'><strong>For Request:</strong> </span>24 x 7</p>
+               <p><span class='text-color'><strong>For Call :</strong></span> 2:pm - 3:30 PM</p>
+           
              </div>
              
-             <div class="col-md-3">
-               <h3><strong>Contact Us</strong></h3>
-                        <p class="lead">
-                            Ipsum Street, Lorem Tower, Salem, Oregon, 5258652
-                        </p>
-                        <p class="con-us lead"><a href="#">555 555 5555</a></p>
-                        <p class="con-us"><a href="#">yourinfo@modern.com</a></p>
-                       <a href="https://play.google.com/store/apps/details?id=appinventor.ai_jay503cool.TONYS&hl=en" target="_blank"><img class="img-responsive" id="store" src='img.jpg'></a>
+             <div class='col-md-3'>
+               <h3><strong>Our Locations</strong></h3>
+                        <p class='lead'>
+                           Mumbaim, Pune, Nashik, Hyderabad, Vijayawada, Bangalore, Jaipur, Udaipur, Indore, Surat, Ahmedabad, Rajkot, Many More...</p>
+                       
+               <p class='con-us lead'><a href='https://m.me/interiors.IND'>Message Now</a></p>
+                        <p class='con-us'><a href='mailto:faldumahek@gmail.com.com'>faldumahek@gmail.com</a></p>
+               <a href='https://mahekpatel' target='_blank'><img class='img-responsive' id='store' src='https://mahekfaldu.github.io/web1/img.jpg'/></a>
              </div>
              
              
@@ -1144,39 +1723,474 @@
 
 
 
-<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
-        <div class="modal-content">
-            <div class="modal-body">
-                <img src="" alt="" />
+<div aria-hidden='true' aria-labelledby='myLargeModalLabel' class='modal fade' id='lightbox' role='dialog' tabindex='-1'>
+    <div class='modal-dialog'>
+        <button aria-hidden='true' class='close hidden' data-dismiss='modal' type='button'>&#215;</button>
+        <div class='modal-content'>
+            <div class='modal-body'>
+                <img alt='' src=''/>
             </div>
         </div>
     </div>
 </div>
   
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <div aria-hidden='true' aria-labelledby='videoModal' class='modal fade' id='videoModal' role='dialog' tabindex='-1'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-body'>
+                <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>times</button>
                 <div>
-                    <iframe width="100%" height="350" src=""></iframe>
+                    <iframe height='350' src='' width='100%'/>
                 </div>
             </div>
         </div>
     </div>
-  <script src='jquery-2.2.4.min.js'></script>
-<script src='owl.carousel.min.js'></script>
-<script src='bootstrap.min.js'></script>
+  <script src='https://mahekfaldu.github.io/web1/jquery-2.2.4.min.js'/>
+<script src='https://mahekfaldu.github.io/web1/owl.carousel.min.js'/>
+<script src='https://mahekfaldu.github.io/web1/bootstrap.min.js'/>
 
   
 
-    <script  src="js/index.js"></script>
+    
+
+<script>
+//modal light box by https://bootsnipp.com/mouse0270
+$(document).ready(function() {
+    var $lightbox = $(&#39;#lightbox&#39;);
+    
+    $(&#39;[data-target=&quot;#lightbox&quot;]&#39;).on(&#39;click&#39;, function(event) {
+        var $img = $(this).find(&#39;img&#39;), 
+            src = $img.attr(&#39;src&#39;),
+            alt = $img.attr(&#39;alt&#39;),
+            css = {
+                &#39;maxWidth&#39;: $(window).width() - 100,
+                &#39;maxHeight&#39;: $(window).height() - 100
+            };
+    
+        $lightbox.find(&#39;.close&#39;).addClass(&#39;hidden&#39;);
+        $lightbox.find(&#39;img&#39;).attr(&#39;src&#39;, src);
+        $lightbox.find(&#39;img&#39;).attr(&#39;alt&#39;, alt);
+        $lightbox.find(&#39;img&#39;).css(css);
+    });
+    
+    $lightbox.on(&#39;shown.bs.modal&#39;, function (e) {
+        var $img = $lightbox.find(&#39;img&#39;);
+            
+        $lightbox.find(&#39;.modal-dialog&#39;).css({&#39;width&#39;: $img.width()});
+        $lightbox.find(&#39;.close&#39;).removeClass(&#39;hidden&#39;);
+    });
+});
 
 
 
+ 
+ $(&quot;#owl-demo&quot;).owlCarousel({
 
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+    pagination: true,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [979, 3]
+
+  });
+</script>
+ 
+</div>
+
+
+<b:section class='clearboth' id='page_list_top' name='Page List (Top)' showaddelement='false'/>
+
+  <div class='bottomMenu hide' id='myID'>
+
+<header class='header'>
+  <div class='hamburger'>
+    <button class='button hamburger__button js-menu__toggle'>
+      <span class='hamburger__label'>Open menu</span>
+    </button>
+  </div>
+  <nav class='menu'>
+    <ul class='list menu__list'>
+      <li class='menu__group'>
+        <a class='link menu__link' href='#0'>Home</a>
+      </li>
+      <li class='menu__group'>
+        <a class='link menu__link' href='#0'>About me</a>
+      </li>
+      <li class='menu__group'>
+        <a class='link menu__link' href='#0'>Services</a>
+      </li>
+      <li class='menu__group'>
+        <a class='link menu__link' href='#0'>Portfolio</a>
+      </li>
+      <li class='menu__group'>
+        <a class='link menu__link' href='#0'>Blog</a>
+      </li>
+      <li class='menu__group'>
+        <a class='link menu__link' href='https://m.me/mahek.faldu'>Contacts</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  </div>
+ <script>
+(function(){
+  &#39;use strict&#39;;
+
+  class Menu {
+    constructor(settings) {
+      this.nodeMenu = settings.nodeMenu;
+      settings.nodeMenuButton.addEventListener(&#39;click&#39;, this.toggle.bind(this));
+    }
+
+    toggle() {
+      return this.nodeMenu.classList.toggle(&#39;js-menu_activated&#39;);
+    }
+  }
+
+  let nodeMenu = document.querySelector(&#39;body&#39;);
+  
+  new Menu({
+    nodeMenu: nodeMenu,
+    nodeMenuButton: nodeMenu.querySelector(&#39;.js-menu__toggle&#39;)
+  });
+})();
+</script>
+<style>
+/*
+=====
+LEVEL 1. RESET STYLES
+=====
+*/
+
+button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: inherit;
+}
+
+.button{
+  cursor: pointer;
+  color: var(--colorWhite);
+}
+
+a{
+  display:inline-block;
+  text-decoration: none;
+}
+
+.link{
+  color: inherit;
+}
+
+.list{
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/*
+=====
+LEVEL 2. MENU STYLES
+=====
+*/
+
+/* menu */
+
+.header{
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--colorWhite);
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.menu{
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 55px;
+
+  height: 0;
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu__list{
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 100%;
+  display: none;
+
+  padding-top: 30px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu__group{
+  padding: .5rem 3rem; 
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__group_active{
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+}
+
+.menu__item{
+  padding: 8px 25px;
+  display: block;
+}
+
+/* hamburger */
+
+.hamburger{
+  position: relative;
+  line-height: 1;
+  padding-bottom: .5em;
+}
+
+.hamburger:before{
+  content :&quot;&quot;;
+  width: 100px;
+  height: 100px;
+  background-color: var(--colorMain);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -55px;
+  left: -35px;
+}
+
+.hamburger__button{
+  width: 1.4em;
+  height: 1em;
+  font-size: 20px;
+
+  position: relative;
+  text-indent: -9999px;
+  z-index: 2;
+}
+
+.hamburger__button:before, .hamburger__button:after, .hamburger__label{
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: currentColor;
+
+  position: absolute;
+  left: 0;
+}
+
+.hamburger__button:before, .hamburger__button:after{
+  content:&quot;&quot;;
+}
+
+.hamburger__button:before{
+  top: 0;
+}
+
+.hamburger__button:after{
+  bottom: 0;
+}
+
+.hamburger__button:focus{
+  outline: none;
+}
+
+.hamburger__label{
+  margin-top: -.1em;
+  top: 50%;
+}
+
+/* activated state */
+
+.js-menu_activated{
+  overflow: hidden;
+}
+
+.js-menu_activated .menu{
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.js-menu_activated .hamburger:before{
+  width: 100vh;
+  height: 100vh;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+}
+
+.js-menu_activated .menu__list{
+  display: block;
+}
+
+.js-menu_activated .hamburger__button:before{
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+  top: 50%;
+}
+
+.js-menu_activated .hamburger__button:after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.js-menu_activated .hamburger__label{
+  transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+  opacity: 0;
+}
+
+/*
+=====
+LEVEL 3. MOBILE ANIMATION STYLES
+=====
+*/
+
+.menu{
+  transition: opacity .2s ease-out;
+}
+
+.js-menu_activated .menu{
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.hamburger:before{
+  will-change: width, height;
+  transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+.js-menu_activated .hamburger:before{
+  transition-duration: 1s;
+}
+
+.hamburger__button:before, .hamburger__button:after{
+  transition-property: transform;
+}
+
+.hamburger__button:before, .hamburger__button:after, .hamburger__label{
+  transition-timing-function: ease;
+  transition-duration: .15s;
+}
+
+.hamburger__label{
+  transition-property: transform, opacity;
+}
+
+/*
+* demo page
+*/
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  color: var(--colorBlack);
+
+  margin: 0;
+  -webkit-overflow-scrolling: touch;   
+}
+
+:root{
+  --colorBlack: #222;
+  --colorWhite: #fff;
+  --colorGray: #f0f0f0;
+  --colorMain: #4557bb;
+  --colorMainLight: #8491d8;
+  --colorMainDark: #233286;
+}
+
+a{
+  color: var(--colorMain);
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+}
+
+
+.page__name{
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page__hint{
+  display: block;
+  line-height: 1.45;
+  margin-bottom: .5rem;
+}
+</style>
+
+
+ 
+<script>
+myID = document.getElementById(&quot;myID&quot;);
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y &gt;=5000) {
+        myID.className = &quot;bottomMenu show&quot;
+    } else {
+        myID.className = &quot;bottomMenu hide&quot;
+    }
+};
+
+window.addEventListener(&quot;scroll&quot;, myScrollFunc);
+</script>
+<style>
+.bottomMenu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 0px solid #000;
+ 
+    z-index: 1;
+    transition: all 3s;
+}
+.hide {
+    opacity:0;
+    left:-100%;
+}
+.show {
+    opacity:1;
+    left:0;
+}
+</style>
 </body>
-
+</meta>
 </html>
