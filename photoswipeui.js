@@ -78,9 +78,8 @@ var PhotoSwipeUI_Default =
 
 			shareButtons: [
 				{id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
-				{id:'twitter', label:'whatsapp', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
-				{id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/'+
-													'?url={{url}}&media={{image_url}}&description={{text}}'},
+				{id:'twitter', label:'Share In Whatsapp', url:'https://api.whatsapp.com/send?text=https%3A%2F%2Finteriorsin.blogspot.com%2F%23gallery'}
+			
 		
 			],
 			getImageURLForShare: function( /* shareButtonData */ ) {
